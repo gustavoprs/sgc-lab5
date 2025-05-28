@@ -6,7 +6,7 @@ public class Main {
         int e = -1;
         Scanner in = new Scanner(System.in);
         do {
-            System.out.println("\nBoa tarde?\n\t[1] Boa tarde!\n\t[2] Boa noite, na verdade.\n\t[3] Bom dia, afinal qualquer momento do dia ainda é o dia.\n\n\t[0] Tchau.");
+            System.out.println("\nBoa tarde?\n\t[1] Boa tarde!\n\t[2] Boa noite, na verdade.\n\t[3] Adivinhe o número!.\n\n\t[0] Tchau.");
             try {
                 e = in.nextInt();
             } catch (InputMismatchException exception) {
@@ -25,8 +25,8 @@ public class Main {
                     System.out.println("\nMas tu não acha que podia ser bom dia também? No fim, qualquer momento do dia ainda é o dia.");
                     break;
                 case 3:
-                    System.out.println("\nEssa é a ideia certa, exatamente!!\nJá que tu sacou já, vou indo nessa...");
-                    e = 0;
+										GuessingGame guessingGame = new GuessingGame();
+										guessingGame.play();
                     break;
                 default:
                     break;
