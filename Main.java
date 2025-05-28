@@ -20,7 +20,7 @@ public class Main {
     public static void main(String[] args) {
         int e = -1;
         do {
-            System.out.println("========================[MENU PRINCIPAL]========================\n\n\t[1] Bom dia! (?)\n\t[2] Pedra, Papel, Tesoura!\n\t[3] (Em breve...)\n\n\t[0] Sair.");
+            System.out.println("========================[MENU PRINCIPAL]========================\n\n\t[1] Bom dia! (?)\n\t[2] Pedra, Papel, Tesoura!\n\t[3] Adivinhe o número!\n\n\t[0] Sair.");
             e = antiMismatch();
             switch (e) {
                 case 0:
@@ -62,7 +62,9 @@ public class Main {
                             break;
                     }
                 case 3:
-                //TODO Gustavo P.
+										GuessingGame guessingGame = new GuessingGame();
+										guessingGame.play();
+                    break;
                 default:
                     break;
             }
